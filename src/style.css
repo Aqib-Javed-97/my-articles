@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9ac9ec;
+}
+
+._Link {
+  color: blue;
+  text-decoration: none;
+}
+
+
+/** AuthLayout component */
+
+.AuthLayout__page {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .AuthLayout__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.AuthLayout__wrapper {
+  padding: 32px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .AuthLayout__wrapper {
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+    height: 80%;
+  }
+}
+
+
+/** Signin page **/
+
+.Signin__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #2f6e9e;
+}
+
+.Signin__pageHeader {
+  color: #FF449F;
+}
+
+.Signin__linkWrapper {
+  margin-top: 32px;
+}
+
+
+/** Button component */
+
+.Button {
+  padding: 12px 56px;
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  border: 1px solid;
+  border-color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.Button:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+}
+
+.Button--primary {
+  color: #FF449F;
+  border-color: #FF449F;
+}
+
+.Button--primary:hover {
+  color: #fff;
+  border-color: #FF449F;
+  background-color: #FF449F;
+}
+
+.Button--secondary {
+  color: #005F99;
+  border-color: #005F99;
+}
+
+.Button--secondary:hover {
+  color: #fff;
+  border-color: #005F99;
+  background-color: #005F99;
+}
+
+
+/** InputText component*/
+
+.InputText__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 24px;
+}
+
+.InputText__label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.InputText__input {
+  outline: none;
+  padding: 12px 11px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.InputText__input:focus {
+  border-color: #FF449F;
+}
+
+.InputText__input:focus+.InputText__label {
+  color: #FF449F;
+}
+
+.Signup__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #2f6e9e;
+}
+
+.Signup__pageHeader {
+  color: #FF449F;
+}
+
+.Signup__linkWrapper {
+  margin-top: 20px;
+}
+
+.errorClass {
+  color: red;
+  font-size: large;
+  font-style: bold;
+}
+
+.articleCard {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 650px;
+  background-color: #2f6e9e;
+}
